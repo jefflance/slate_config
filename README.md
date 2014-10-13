@@ -17,10 +17,10 @@ You can find the link to the application on the [Slate page][slate].
 Here is the [.dmg][slate dmg].
 
 2. Clone the repository  
-        git clone git://github.com/jefflance/slate_config.git ~/.slate.d
+    `git clone git://github.com/jefflance/slate_config.git ~/.slate.d`
 
 3. Copy the global config file : slate.js  
-        cp .slate.d/template/slate.js ~/.slate.js
+    `cp .slate.d/template/slate.js ~/.slate.js`
 
 4. Start Slate
 
