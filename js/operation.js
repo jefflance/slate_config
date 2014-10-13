@@ -24,7 +24,7 @@ hint = slate.operation("hint",{
 grid = slate.operation("grid", {
     "grids": {
         "1280x800": {
-            "width": 2,
+            "width": 1,
             "height": 2
         },
     },
