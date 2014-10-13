@@ -10,7 +10,7 @@
 
 slate.log("FUNCTIONS");
 
-var retile = function(windowObject) {
+var tile = function(windowObject) {
   var windows = [];
   slate.eachApp(function(app) {
     app.eachWindow(function(win) {
@@ -21,7 +21,7 @@ var retile = function(windowObject) {
   });
 
   var ss          = slate.screen().rect();
-  var windowSizeX = ss.width * 0.4;
+  var windowSizeX = ss.width * 0.5;
   var windowSizeY = ss.height / (windows.length - 1);
   var winPosY     = 0;
 
@@ -29,7 +29,7 @@ var retile = function(windowObject) {
     w = windows[i];
 
     if (w.title() == windowObject.title()) {
-      mainWidth = (windows.length > 1) ? "screenSizeX*0.6" : "screenSizeX";
+      mainWidth = (windows.length > 1) ? "screenSizeX*0.5" : "screenSizeX";
 
       w.doOperation("move", {
         "x": "screenOriginX",
@@ -40,7 +40,7 @@ var retile = function(windowObject) {
     }
     else {
       w.doOperation("move", {
-        "x": "screenSizeX*0.6",
+        "x": "screenSizeX*0.5",
         "y": winPosY,
         "width": windowSizeX,
         "height": windowSizeY
