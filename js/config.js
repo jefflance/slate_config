@@ -19,5 +19,6 @@ slate.configAll({
     'checkDefaultsOnLoad': true,
     'orderScreensLeftToRight': true,
     'gridBackgroundColor': [0, 0, 0, 1.0],
-    'gridCellBackgroundColor': [64, 64, 64, 0.5]
+    'gridCellBackgroundColor': [64, 64, 64, 0.5],
+    'windowHintsShowIcons': true,
 });
