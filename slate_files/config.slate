@@ -1,0 +1,12 @@
+# $HOME/.slate.d/configs.slate
+#
+#    CONFIG
+#
+# Jeff LANCE <jeff.lance@mala.fr>
+#
+# 12/10/2014
+#
+
+config defaultToCurrentScreen true
+config nudgePercentOf screenSize
+config resizePercentOf screenSize

@@ -1,0 +1,13 @@
+# $HOME/.slate.d/resize.slate
+#
+#    RESIZE BINDINGS
+#
+# Jeff LANCE <jeff.lance@mala.fr>
+#
+# 12/10/2014
+#
+
+bind right:alt       resize +10% +0
+bind left:alt        resize -10% +0
+bind up:alt          resize +0   -10%
+bind down:alt        resize +0   +10%
