@@ -10,6 +10,7 @@
 
 slate.log("RESIZE");
 
+
 slate.bindAll({
     "right:alt": slate.operation(
         "resize", { "width" : "+10%", "height" : "+0" }

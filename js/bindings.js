@@ -10,8 +10,9 @@
 
 slate.log("BINDINGS");
 
+
 slate.bindAll({
-    // Gestion de l'écran
+    // Window positionning
     "1:ctrl": left,
     "2:ctrl": fullscreen,
     "3:ctrl": right,
@@ -27,5 +28,5 @@ slate.bindAll({
     "esc:ctrl": grid,
 
     // Hint
-    // "§:ctrl": hint,
+    "esc:ctrl,alt": hint,
 });

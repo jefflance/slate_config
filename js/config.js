@@ -10,6 +10,7 @@
 
 slate.log("CONFIG");
 
+
 slate.configAll({
     "defaultToCurrentScreen": true,
     "checkDefaultsOnLoad": true,

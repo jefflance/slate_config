@@ -10,7 +10,15 @@
 
 slate.log("OPERATION");
 
-var grid, fullscreen, right, left, topLeft, bottomLeft, topRight, bottomRight;
+
+var hint, grid, fullscreen, right, left, topLeft, bottomLeft, topRight, bottomRight;
+
+
+// Hint
+hint = slate.operation("hint",{
+    "characters": "QWERTYUIOP",
+});
+
 
 // Grid
 grid = slate.operation("grid", {
@@ -23,7 +31,8 @@ grid = slate.operation("grid", {
     "padding": 5
 });
 
-// Affichage
+
+// Window positionning
 fullscreen = slate.operation('move', {
     x: 'screenOriginX',
     y: 'screenOriginY',

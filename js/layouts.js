@@ -10,8 +10,11 @@
 
 slate.log("LAYOUTS");
 
+
 var layoutFullScreen, layoutQuarter;
 
+
+// Fullscreen layout
 layoutFullScreen = slate.layout("Full Screen", {
     "_after_": {
         "operations": [fullscreen],
