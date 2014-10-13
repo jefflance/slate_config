@@ -8,14 +8,15 @@
 //
 
 
-slate.log("FUNCTIONS");
+slate.log('FUNCTIONS');
+
 
 var tile = function(windowObject) {
   var windows = [];
   slate.eachApp(function(app) {
     app.eachWindow(function(win) {
       if (win.isMinimizedOrHidden()) return;
-      if (null == win.title() || win.title() === "") return;
+      if (null == win.title() || win.title() === '') return;
       windows.push(win);
     });
   });
@@ -29,21 +30,21 @@ var tile = function(windowObject) {
     w = windows[i];
 
     if (w.title() == windowObject.title()) {
-      mainWidth = (windows.length > 1) ? "screenSizeX*0.5" : "screenSizeX";
+      mainWidth = (windows.length > 1) ? 'screenSizeX*0.5' : 'screenSizeX';
 
-      w.doOperation("move", {
-        "x": "screenOriginX",
-        "y": "screenOriginY",
-        "width": mainWidth,
-        "height": "screenSizeY"
+      w.doOperation('move', {
+        'x': 'screenOriginX',
+        'y': 'screenOriginY',
+        'width': mainWidth,
+        'height': 'screenSizeY'
       });
     }
     else {
-      w.doOperation("move", {
-        "x": "screenSizeX*0.5",
-        "y": winPosY,
-        "width": windowSizeX,
-        "height": windowSizeY
+      w.doOperation('move', {
+        'x': 'screenSizeX*0.5',
+        'y': winPosY,
+        'width': windowSizeX,
+        'height': windowSizeY
       });
 
       winPosY += windowSizeY;

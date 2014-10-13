@@ -8,13 +8,16 @@
 //
 
 
-slate.log("CONFIG");
+slate.log('CONFIG');
+
+
+var laptop = '1280x800';
 
 
 slate.configAll({
-    "defaultToCurrentScreen": true,
-    "checkDefaultsOnLoad": true,
-    "orderScreensLeftToRight": true,
-    "gridBackgroundColor": [0, 0, 0, 1.0],
-    "gridCellBackgroundColor": [64, 64, 64, 0.5]
+    'defaultToCurrentScreen': true,
+    'checkDefaultsOnLoad': true,
+    'orderScreensLeftToRight': true,
+    'gridBackgroundColor': [0, 0, 0, 1.0],
+    'gridCellBackgroundColor': [64, 64, 64, 0.5]
 });

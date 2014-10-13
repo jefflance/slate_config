@@ -8,78 +8,91 @@
 //
 
 
-slate.log("OPERATION");
+slate.log('OPERATION');
 
 
 var hint, grid, fullscreen, right, left, topLeft, bottomLeft, topRight, bottomRight;
 
 
 // Hint
-hint = slate.operation("hint",{
-    "characters": "QWERTYUIOP",
+hint = slate.operation('hint',{
+    'characters': 'QWERTYUIOP',
 });
 
 
 // Grid
-grid = slate.operation("grid", {
-    "grids": {
-        "1280x800": {
-            "width": 1,
-            "height": 2
+grid = slate.operation('grid', {
+    'grids': {
+        '1280x800': {
+            'width': 1,
+            'height': 2
         },
     },
-    "padding": 5
+    'padding': 5
+});
+
+
+// Focus
+focus = slate.operation('focus', {
+    'direction' : 'behind',
 });
 
 
 // Window positionning
 fullscreen = slate.operation('move', {
-    x: 'screenOriginX',
-    y: 'screenOriginY',
-    width: 'screenSizeX',
-    height: 'screenSizeY'
+    'screen': laptop,
+    'x': 'screenOriginX',
+    'y': 'screenOriginY',
+    'width': 'screenSizeX',
+    'height': 'screenSizeY'
 });
 
 right = slate.operation('move', {
-    x: 'screenSizeX / 2',
-    y: 'screenOriginY',
-    width: 'screenSizeX / 2',
-    height: 'screenSizeY'
+    'screen': laptop,
+    'x': 'screenSizeX / 2',
+    'y': 'screenOriginY',
+    'width': 'screenSizeX / 2',
+    'height': 'screenSizeY'
 });
 
 topRight = slate.operation('move', {
-    x: 'screenSizeX / 2',
-    y: 'screenOriginY',
-    width: 'screenSizeX / 2',
-    height: 'screenSizeY / 2'
+    'screen': laptop,
+    'x': 'screenSizeX / 2',
+    'y': 'screenOriginY',
+    'width': 'screenSizeX / 2',
+    'height': 'screenSizeY / 2'
 });
 
 bottomRight = slate.operation('move', {
-    x: 'screenSizeX / 2',
-    y: 'screenSizeY / 2',
-    width: 'screenSizeX / 2',
-    height: 'screenSizeY / 2'
+    'screen': laptop,
+    'x': 'screenSizeX / 2',
+    'y': 'screenSizeY / 2',
+    'width': 'screenSizeX / 2',
+    'height': 'screenSizeY / 2'
 });
 
 left = slate.operation('move', {
-    x: 'screenOriginX',
-    y: 'screenOriginY',
-    width: 'screenSizeX / 2',
-    height: 'screenSizeY'
+    'screen': laptop,
+    'x': 'screenOriginX',
+    'y': 'screenOriginY',
+    'width': 'screenSizeX / 2',
+    'height': 'screenSizeY'
 });
 
 topLeft = slate.operation('move', {
-    x: 'screenOriginX',
-    y: 'screenOriginY',
-    width: 'screenSizeX / 2',
-    height: 'screenSizeY / 2'
+    'screen': laptop,
+    'x': 'screenOriginX',
+    'y': 'screenOriginY',
+    'width': 'screenSizeX / 2',
+    'height': 'screenSizeY / 2'
 });
 
 bottomLeft = slate.operation('move', {
-    x: 'screenOriginX',
-    y: 'screenSizeY / 2',
-    width: 'screenSizeX / 2',
-    height: 'screenSizeY / 2'
+    'screen': laptop,
+    'x': 'screenOriginX',
+    'y': 'screenSizeY / 2',
+    'width': 'screenSizeX / 2',
+    'height': 'screenSizeY / 2'
 });
 
 
