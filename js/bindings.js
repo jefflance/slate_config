@@ -21,7 +21,7 @@ slate.bindAll({
     "3:ctrl,shift,alt": bottomRight,
 
     // Tiling
-    "=:ctrl": retile,
+    "=:ctrl": tile,
 
     // Grid
     "esc:ctrl": grid,
