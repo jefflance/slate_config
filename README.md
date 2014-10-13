@@ -24,5 +24,6 @@ Here is the [.dmg][slate dmg].
 
 4. Start Slate
 
+
 [slate]: https://github.com/jigish/slate "Slate"
 [slate dmg]: http://slate.ninjamonkeysoftware.com/Slate.dmg "Slate .dmg"
