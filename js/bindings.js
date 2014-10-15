@@ -32,4 +32,7 @@ slate.bindAll({
 
     // Focus
     'l:ctrl': focus,
+
+    // Reload
+    'r:ctrl': reload,
 });

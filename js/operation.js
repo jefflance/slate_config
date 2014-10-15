@@ -11,7 +11,8 @@
 slate.log('OPERATION');
 
 
-var hint, grid, fullscreen, right, left, topLeft, bottomLeft, topRight, bottomRight;
+var hint, grid, focus, reload;
+var fullscreen, right, left, topLeft, bottomLeft, topRight, bottomRight, top, bottom;
 
 
 // Hint
@@ -36,6 +37,10 @@ grid = slate.operation('grid', {
 focus = slate.operation('focus', {
     'direction' : 'behind',
 });
+
+
+// Reload
+reload = slate.operation('relaunch');
 
 
 // Window positionning
@@ -96,12 +101,23 @@ bottomLeft = slate.operation('move', {
 });
 
 
-// topLeftThird = slate.operation('move', {
-//     x: 'screenOriginX',
-//     y: 'screenOriginY',
-//     width: 'screenSizeX / 2',
-//     height: 'screenSizeY / 3'
-// });
+top = slate.operation('move', {
+    'screen': laptop,
+    'x': 'screenOriginX',
+    'y': 'screenOriginY / 2',
+    'width': 'screenSizeX',
+    'height': 'screenSizeY / 2'
+});
+
+
+bottom = slate.operation('move', {
+    'screen': laptop,
+    'x': 'screenOriginX',
+    'y': 'screenOriginY / 2',
+    'width': 'screenSizeX',
+    'height': 'screenSizeY / 2'
+});
+
 //
 // midLeftThird = slate.operation('move', {
 //     x: 'screenOriginX',
