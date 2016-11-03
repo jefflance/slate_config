@@ -1,5 +1,4 @@
-# My Slate config file
-
+# Jeff's Slate config file 
 Slate is a configurable window manager for Mac OS X.
 You can found original code [here][slate].
 
